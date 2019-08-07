@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <!-- style sheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <!-- jQuery -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="formulaScreen" id="formula"></div>
+
+            <div class="outputScreen" id="display">
+                0
+            </div>
+            <div class="inputs">
+                <div class="input input-clear" id="clear" >AC</div>
+                <div class="input input-7 number" id="seven" onclick="numberInputHandler(event)">7</div>
+                <div class="input input-8 number" id="eight" onclick="numberInputHandler(event)">8</div>
+                <div class="input input-9 number" id="nine" onclick="numberInputHandler(event)"> 9</div>
+                <div class="input input-4 number" id="four" onclick="numberInputHandler(event)">4</div>
+                <div class="input input-5 number" id="five" onclick="numberInputHandler(event)">5</div>
+                <div class="input input-6 number" id="six" onclick="numberInputHandler(event)">6</div>
+                <div class="input input-1 number" id="one" onclick="numberInputHandler(event)">1</div>
+                <div class="input input-2 number" id="two" onclick="numberInputHandler(event)">2</div>
+                <div class="input input-3 number" id="three" onclick="numberInputHandler(event)">3</div>
+                <div class="input input-0 number" id="zero" onclick="numberInputHandler(event)">0</div>
+
+                <div class="input input-decimal" id="decimal" onclick="decimalInputHandler(event)">.</div>
+
+                <div class="input input-divide" id="divide" onclick="operatorInputHandler(event)">/</div>
+                <div class="input input-multiply" id="multiply"  onclick="operatorInputHandler(event)">x</div>
+                <div class="input input-subtract" id="subtract"  onclick="operatorInputHandler(event)">-</div>
+                <div class="input input-add" id="add"  onclick="operatorInputHandler(event)">+</div>
+
+                <div class="input input-equal" id="equals" onclick="calculation()">=</div>
+            </div>
+        </div>
+        <p class="undertext">Coded by Ca Duong</p>
+
+        <script src="script.js"></script>
+    </body>
+
+    <!--  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+</html>
